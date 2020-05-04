@@ -4,7 +4,7 @@
   >
     <div>
       <router-link class="logo font-bold text-xl tracking-tight" to="/"
-        >The Login Page</router-link
+        >Login Page</router-link
       >
     </div>
     <div>
@@ -13,25 +13,25 @@
       >
       <router-link
         v-if="!user"
-        class="p-2 mx-1 hover:text-purple-900 hover:bg-gray-300"
+        class="p-2 mx-1 hover:text-blue-900 hover:bg-gray-300"
         to="/login"
         >Login</router-link
       >
       <button
         v-if="user"
-        class="p-2 mx-1 hover:text-purple-900 hover:bg-gray-300"
+        class="p-2 mx-1 hover:text-blue-900 hover:bg-gray-300"
         @click="logOut"
       >
         Logout
       </button>
       <router-link
-        class="p-2 mx-1 hover:text-purple-900 hover:bg-gray-300"
+        class="p-2 mx-1 hover:text-blue-900 hover:bg-gray-300"
         to="/public"
         >Public</router-link
       >
       <router-link
         v-if="user"
-        class="p-2 mx-1 text-white hover:text-purple-900 hover:bg-gray-300"
+        class="p-2 mx-1 text-white hover:text-blue-900 hover:bg-gray-300"
         to="/private"
         >Private</router-link
       >
@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  :not (.logo).router-link-exact-active {
-  @apply font-bold text-purple-900 bg-white;
-  }
+:not(.logo).router-link-exact-active {
+  @apply font-bold text-red-900 bg-white;
+}
 </style>

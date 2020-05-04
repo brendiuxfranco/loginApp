@@ -6,14 +6,14 @@ import 'firebase/firebase-auth'
 import * as firebaseui from 'firebaseui'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBC1W2__rGlZtRIfwvm4y1WDeyGf5z2McU",
-  authDomain: "loginexample-25289.firebaseapp.com",
-  databaseURL: "https://loginexample-25289.firebaseio.com",
-  projectId: "loginexample-25289",
-  storageBucket: "loginexample-25289.appspot.com",
-  messagingSenderId: "439985478129",
-  appId: "1:439985478129:web:3f1f4224ec7e2c457acc50"
-};
+  apiKey: process.env.VUE_APP_apiKey,
+  authDomain: process.env.VUE_APP_authDomain,
+  databaseURL: process.env.VUE_APP_databaseURL,
+  projectId: process.env.VUE_APP_projectid,
+  storageBucket: process.env.VUE_APP_storageBucket,
+  messagingSenderId: process.env.VUE_APP_messagingSenderId,
+  appId: process.env.VUE_APP_appId
+}
 
 firebase.initializeApp(firebaseConfig)
 const ui = new firebaseui.auth.AuthUI(firebase.auth())

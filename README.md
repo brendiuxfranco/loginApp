@@ -1,4 +1,4 @@
-# loginapp
+# login
 
 ## Project setup
 ```
